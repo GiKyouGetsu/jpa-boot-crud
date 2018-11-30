@@ -1,0 +1,23 @@
+mybatis:
+  type-aliases-package: com.avaya.me.entity
+spring:
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/mybatis
+    username: postgres
+    password: Avaya123#
+
+  output:
+    ansi:
+      enabled: DETECT
+server:
+  port: 25017
+
+logging:
+  level:
+    root: info
